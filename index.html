@@ -5,16 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natures Platter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --font-sora: "Sora", sans-serif;
+        /* --text-primary: rgba(23, 152, 0, 1); */
+        --bg-green: rgba(23, 152, 0, 1);
+
+      }
+    </style>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-<body>
-<h1 class="text-6xl">natural platter</h1>
+<body class="font-sora">
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+        <div class="max-w-7xl mx-auto">
+            <div class="navbar px-2 lg:px-0 md:py-4 lg:py-6">
+                <div class="navbar-start">
+                    <a class="">
+                        <img src="./assets/logo-header.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="flex gap-8 px-1">
+                        <li><a class="text-black hover:text-green-600" href="">Product</a></li>
+                        <li><a href="" class="text-black hover:text-green-600">Services</a></li>
+                        <li><a href="" class="text-black hover:text-green-600">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:block space-x-3">
+                        <a href="" class=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="" class=""><i class="fa-solid fa-cart-arrow-down"></i></a>
+                        <a href="" class="btn px-7 py-[10px] rounded-lg font-normal border-green-600">Login</a>
+                        <a href=""
+                            class="btn bg-green-600 text-white rounded-lg border-none font-normal px-7 py-[10px]">Register</a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class=" dropdown-content block bg-base-100 rounded-box z-1 top-10 right-0 mt-3 w-52 p-4 space-y-3 shadow">
+                            <li><a class="text-black hover:text-green-600" href="">Product</a></li>
+                            <li><a href="" class="text-black hover:text-green-600">Services</a></li>
+                            <li><a href="" class="text-black hover:text-green-600">Contact us</a></li>
+                            <li><a href="" class=""><i class="fa-solid fa-magnifying-glass"></i> search</a></li>
+                            <li> <a href="" class=""><i class="fa-solid fa-cart-arrow-down"></i> Cart</a></li>
+                            <li> <a href="" class="btn px-7 py-[10px] rounded-lg font-normal border-green-600">Login</a>
+                            </li>
+                            <li><a href=""
+                                    class="btn bg-green-600 text-white rounded-lg border-none font-normal px-7 py-[10px]">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="">
+                <div class="pt-12 md:pt-24 pb-8 space-y-4">
+                    <h2 class="text-[32px] md:text-[56px] font-normal text-center">Freshness <span class="text-green-600">You Can
+                            <br>Count</span> On, Price You'll Love!</h2>
+                    <p class="text-base md:text-xl  text-[rgba(196, 196, 196, 1)] text-center">Shop your daily essentials at
+                        unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img class="" src="./assets/hero-vegetables.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="max-w-7xl mx-auto md:py-[140px] py-12 px-5 lg:px-0">
+            <div class="">
+                <h2 class="md:text-4xl text-2xl font-semibold pb-10 text-green-600">Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-[#EFEBE3] rounded-2xl md:p-8 p-5 flex flex-col items-center space-y-6">
+                        <div class="bg-white p-6 rounded-full">
+                            <img class="w-[84px] md:w-auto" src="./assets/service.png" alt="">
+                        </div>
+                        <div class="space-y-3 text-center">
+                            <h5 class="text-xl md:text-2xl  font-semibold">24/7 Services </h5>
+                            <p class="text-base md:text-xl font-light text-[#111111] "> Our services are available online 24/7 for
+                                your convenience.
+                                Get reliable support and solutions anytime, anywhere.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] rounded-2xl md:p-8 p-5 flex flex-col items-center space-y-6">
+                        <div class="bg-white p-6 rounded-full">
+                            <img class="w-[84px] md:w-auto" src="./assets/delivery.png" alt="">
+                        </div>
+                        <div class="space-y-3 text-center">
+                            <h5 class="text-xl md:text-2xl  font-semibold">Fast Delivery </h5>
+                            <p class="text-base md:text-xl font-light text-[#111111] "> We ensure fast and efficient delivery without
+                                compromising quality.
+                                Your orders are processed quickly to meet your deadlines on time.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] rounded-2xl md:p-8 p-5 flex flex-col items-center space-y-6">
+                        <div class="bg-white p-6 rounded-full">
+                            <img class="w-[84px] md:w-auto" src="./assets/healthy.png" alt="">
+                        </div>
+                        <div class="space-y-3 text-center">
+                            <h5 class="text-xl md:text-2xl  font-semibold">Healthy Products </h5>
+                            <p class="text-base md:text-xl font-light text-[#111111] "> We provide healthy, high-quality products
+                                made with safety and wellness in mind.
+                                Our products support a better lifestyle you can trust every day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
